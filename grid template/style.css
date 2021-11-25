@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+:root {
+    --parag-color: black;
+    --font-fam:  'Montserrat', sans-serif;
+    --parag-font-weight: 800;
+    --parag-font-size: 13px;
+    --my-padding: 1.8rem 1.5rem;
+}
+
+body {
+    font-family:var(--font-fam);
+    font-size: var(--parag-font-size);
+    color: whitesmoke;
+}
+
+main {
+    background-image: linear-gradient(to right, #2cda9d, #00a5cf);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+section {
+    width: 85%;
+    display: grid;
+    margin-inline: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "a a a b b b c c c d d d"
+    "e e e f f f f f f g g g"
+    "e e e h h h i i i g g g";
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.divvy {
+    line-height: 1.5rem;
+    padding: 1.8rem;
+}
+
+h1 {
+    font-weight: 900;
+    margin-bottom: 1.4rem;
+}
+
+.one {
+    grid-area: a;
+    background-color: #000000;
+    
+}
+
+.one ul li {
+    padding-block: .25rem;
+}
+
+.two {
+    grid-area: b;
+    background-color: #00a5cf;
+}
+
+.two button,
+.seven button {
+    padding: .5rem 2rem .5rem 1rem;
+    margin-top: 1.5rem;
+    background-color: whitesmoke;
+    font-family: var(--font-fam);
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+} 
+
+.two button:hover {
+    background-color: #2cda9d;
+}
+
+.three {
+    grid-area: c;
+    background-color: #2cda9d;
+}
+
+.but {
+    padding: .5rem 2rem .5rem 1rem;
+    margin-top: .5rem;
+    background-color: whitesmoke;
+    font-family: var(--font-fam);
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.but:hover {
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+#email, #pass {
+    width: 100%;
+    padding: 10px;
+    margin-block: 16px;
+    border-radius: 18px;
+    border: none;
+}
+
+.four {
+    grid-area: d;
+    background-color: #000000; 
+}
+
+.four img {
+    width: 50px;
+}
+
+.cont {
+    display: flex;
+    background-color: whitesmoke;
+    padding: .5rem;
+    border-radius: 10px;
+    line-height: 1.350rem;
+    margin-top: 2.4rem;
+}
+
+.cont h3 {
+    color: black;
+}
+
+small {
+    color: rgb(110, 106, 106);
+}
+
+.details {
+    margin-left: 1.3rem;
+}
+
+.four button {
+    padding: .5rem 2rem .5rem 1rem;
+    margin-top: 2.2rem;
+    background-color: whitesmoke;
+    font-family: var(--font-fam);
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.four button:hover {
+    background-color: #2cda9d;
+    color: whitesmoke;
+}
+
+.star {
+    background-color: yellow;
+}
+
+.five {
+    grid-area: e;
+    background-color: #6c757d;
+}
+
+.six {
+    grid-area: f;
+    background-color: #000000;
+}
+
+.blog img {
+    float: left;
+    margin-right: 1.5rem;
+}
+
+.seven {
+    grid-area: g;
+    background-color: #6c757d;
+    text-align: center;
+}
+
+.seven button:hover {
+    background-color: #2cda9d;
+}
+
+.seven img {
+    max-width: 100%;
+}
+
+.eight img {
+    max-width: 100px;
+}
+
+.eight h1 {
+    margin-top: 1rem;
+}
+
+.eight {
+    grid-area: h;
+    background-color: #00a5cf;
+}
+.nine {
+    text-align: center;
+    grid-area: i;
+    background-color: #2cda9d;
+}
+
+.nine img {
+    margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        display: block;
+    }
+
+    main {
+        background-image: linear-gradient(to right, #2cda9d, #00a5cf);
+        width: 100vw;
+        height: 500vh;
+    }
+}
+
+
+
+
+
